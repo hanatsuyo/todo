@@ -1,0 +1,19 @@
+.top-title{
+        text-align:center;
+        padding-top:50px;
+}
+
+.container-card{
+    padding-left:160px;
+    margin-top:30px;
+    padding-bottom:50px;
+    display: inline-block;
+    float:left;
+}
+
+
+.card-img-top{
+    height:200px;
+    width:auto;
+    object-fit: cover;
+}

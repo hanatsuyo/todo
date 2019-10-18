@@ -1,0 +1,38 @@
+.all-content{
+    padding-left:300px;
+    padding-top:60px;
+
+}
+
+.title h1{
+    font-size:60px;
+}
+
+.date{
+    font-size:15px;
+}
+
+.image img{
+    width:auto;
+    height:600px;
+    
+}
+
+.text{
+    padding-top:100px;
+    margin-right :250px;
+    color:#545454;
+    line-height:30px;
+    padding-bottom:40px;
+    border-bottom:1px solid gray;
+}
+
+.commnet h3{
+    padding-top:50px; 
+}
+.comment-view{
+    border-bottom:1px solid gray;
+}
+
+
+

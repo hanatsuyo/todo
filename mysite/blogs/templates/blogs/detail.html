@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet"  href="{% static 'blogs/detail.css' %}">
+</head>
+<body>
+    <div class="all-content">
+        <div class="title">
+            <h1>{{blog.title}}</h1>
+        </div>
+        <div class="date">
+            {{blog.created_datetime}}
+        </div>
+        <div class="image">
+            <img src="{{ blog.image.url }}">
+        </div>
+        <div class="text">
+            {{blog.text | linebreaksbr}}
+        </div>
+    
+    <div class="comment">
+        <h3>コメント</h3>
+        <form method="post" action="">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit">
+        </form>
+        
+        {% for comment in comments %}
+        <div class="comment-view">
+          <p>author: {{ comment.author }}</p>
+          <p>{{ comment.text }}</p>
+        </div>
+          
+        {% endfor %}
+      </div>
+      </div>
+   
+</body>
+</html>
+
+{% endblock %}

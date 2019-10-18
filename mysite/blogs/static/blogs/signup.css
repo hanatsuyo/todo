@@ -1,0 +1,47 @@
+.signup-btn{
+    background-color:grey;
+    border-radius:5px;
+}
+
+.signup-form label{
+    padding-top:20px;
+}
+
+.signup-btn{
+    margin-top:20px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-family:'Lato';
+    float:left;
+}
+
+.login-btn{
+    margin-top:20px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    margin-left:30px;
+    font-family:'Lato';
+    float:left;
+}
+
+.signup-btn:active{
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.login-btn:active{
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}

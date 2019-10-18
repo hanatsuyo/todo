@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+</div>
+<head>
+  <link rel="stylesheet"  href="{% static 'blogs/index.css' %}">
+</head>
+<div class="top-title">
+  <h1>ブログ一覧</h1>
+</div>
+    {% for blog in blogs %}
+
+    <div class="container-card">
+      <div class="card" style="width: 18rem;">
+          <img src="{{ blog.image.url }}" class="card-img-top" alt="..."> 
+          <div class="card-body">
+            <h5 class="card-title">{{blog.title}}</h5>
+            <p class="card-text"></p>
+            <a href="{% url 'blogs:detail' blog_id=blog.id %}" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+{% endblock %}
